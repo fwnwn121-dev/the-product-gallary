@@ -16,26 +16,45 @@ ip.onclick=()=>{
 iphoneSlider.style.display="flex";
 samsungSlider.style.display="none";
 honorSlider.style.display="none";
+let sliders = document.querySelector(".sliders");
 
 
+ip.onclick = () => {
+
+  iphoneSlider.style.display = "flex";
+  samsungSlider.style.display = "none";
+  honorSlider.style.display = "none";
+
+  sliders.scrollTo({
+    left: 0,
+    behavior: "smooth"
+  });
 }
-sam.onclick=()=>{
-    
-samsungSlider.style.display="flex";
-iphoneSlider.style.display="none";
-honorSlider.style.display="none";
 
+sam.onclick = () => {
 
+  samsungSlider.style.display = "flex";
+  iphoneSlider.style.display = "none";
+  honorSlider.style.display = "none";
+
+  sliders.scrollTo({
+    left: 0,
+    behavior: "smooth"
+  });
 }
 
-hon.onclick=()=>{
+hon.onclick = () => {
 
-honorSlider.style.display="flex";
-iphoneSlider.style.display="none";
-samsungSlider.style.display="none";
-    
+  honorSlider.style.display = "flex";
+  iphoneSlider.style.display = "none";
+  samsungSlider.style.display = "none";
 
+  sliders.scrollTo({
+    left: 0,
+    behavior: "smooth"
+  });
 }
+
 
 // navigationbar animation 💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨
 let na1 =document.querySelector(".na1");
