@@ -7,16 +7,7 @@ let hon = document.querySelector(".hon");
 let iphoneSlider = document.querySelector(".iphone-slider");
 let samsungSlider = document.querySelector(".samsung-slider");
 let honorSlider = document.querySelector(".honor-slider");
-
-
-
-ip.onclick=()=>{
-
-
-iphoneSlider.style.display="flex";
-samsungSlider.style.display="none";
-honorSlider.style.display="none";
-let sliders = document.querySelector(".sliders");
+let sliders = document.querySelector(".sliders")
 
 
 ip.onclick = () => {
@@ -54,7 +45,6 @@ hon.onclick = () => {
     behavior: "smooth"
   });
 }
-
 
 // navigationbar animation 💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨💨
 let na1 =document.querySelector(".na1");
