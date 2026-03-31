@@ -66,6 +66,9 @@ scrollbar-gutter: stable;
   "header    header    header"
   "header    header    header"
   "header    header    header"
+  "header    header    header"
+  "header    header    header"
+  "header    header    header"
   "sliders   sliders   sliders"
   "sliders   sliders   sliders"
   "sliders   sliders   sliders"
@@ -135,26 +138,29 @@ font-size: 1rem;
 
 .header{
   grid-area: header ;
-width: 100%;
+width: 100vw;
+height: 100vh;
 background-color: #fff;
 }
 
 .identity{
-width: 100%;
-height: 70%;
+width: 100vw;
+height: 80vh;
 color: #111827;
+gap: 20px;
 display: flex;
 align-items: center;
 justify-content: space-around;
 flex-direction: column;
 }
 .logo{
-  height: 50%;
-  width: 100%;
+  min-height: 45vh;
+  width: 100vw;
    background-color: var(--white-main--);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 25px;
   font-size: 1.3rem;
   font-weight: 900;
@@ -162,28 +168,38 @@ flex-direction: column;
   padding: 50px;
 }
 .logo img{
-  width: 150px;
-  height: 80px;
+  max-width: 100dvw;
+  height: 100%;
+  object-fit: cover;
 }
-.logo :nth-child(1){
- color: #111827;
-  font-size: 1.5rem;
-  font-weight: 900;
+.installment-link{
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.logo :nth-child(2){
-  color: #111827;
-  font-size: 1.5rem;
-  font-weight: 900;
+.installment-img{
+  width: 50%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.logo :nth-child(3){
-  color: #111827;
-  font-size: 1.5rem;
-  font-weight: 800;
+.installment-img img{
+  width: 200px;
+  max-height: 100px !important;
+  object-fit: fill;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.logo p{
-  margin: 0 ;
-  font-size: 1.3rem;
-  font-weight: 900;
+.instalment-info{
+  width: 50%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* navigation-bar start */
@@ -226,7 +242,7 @@ color: #fff;
 
 
 .headline{
-  padding-top:30px ;
+  padding-top:20px ;
   height: 50%;
   width: 100%;
   display: flex;
@@ -772,6 +788,74 @@ height: 5px;
 
 @media screen and (min-width:700px){
  
+.header{
+  grid-area: header ;
+width: 100vw;
+height: 140vh;
+background-color: #fff;
+}
+
+.identity{
+width: 100vw;
+height: 110vh;
+color: #111827;
+gap: 20px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-direction: column;
+}
+.logo{
+  min-height: 100vh;
+  width: 100vw;
+   background-color: var(--white-main--);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 1.3rem;
+  font-weight: 900;
+  box-sizing: border-box;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+.logo img{
+  width: 70dvw;
+  min-height: 70vh;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.installment-link{
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.installment-img{
+  width: 50%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.installment-img img{
+  width: 200px;
+  max-height: 100px !important;
+  object-fit: fill;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.instalment-info{
+  width: 50%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .sliders::-webkit-scrollbar{
 height: 5px;
 }
@@ -965,6 +1049,11 @@ height: 100%;
   grid-template-columns: repeat(3,1fr);
   grid-auto-rows: minmax(100px,auto);
   grid-template-areas:
+  "header    header    header"
+  "header    header    header"
+  "header    header    header"
+  "header    header    header"
+  "header    header    header"
   "header    header    header"
   "header    header    header"
   "header    header    header"
